@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -8,10 +11,142 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl2016.tugas1.MainActivity">
+    tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl2016.tugas1.MainActivity"
+    style="@style/Base.TextAppearance.AppCompat.Headline"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Formulir Pendaftaran"
+        android:id="@+id/textView"
+        style="@style/Base.TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:layout_width="182dp"
+        android:layout_height="38dp"
+        android:text="Beasiswa Cepat Pintar"
+        android:id="@+id/textView2"
+        style="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:id="@+id/textViewNama" />
+
+    <EditText
+        android:hint="Nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextNama" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tempat Tanggal Lahir"
+        android:id="@+id/textViewTTL" />
+
+            <EditText
+                android:hint="TTL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTTL" />
+
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:id="@+id/textViewJK" />
+
+    <RadioGroup
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:id="@+id/rgJK">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:id="@+id/radioButtonPerempuan" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki"
+            android:id="@+id/radioButtonLaki" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobby"
+        android:id="@+id/textViewHobby" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Membaca"
+        android:id="@+id/checkBoxBaca" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olahraga"
+        android:id="@+id/checkBoxOR" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menyanyi/Bermusik"
+        android:id="@+id/checkBoxMB"
+        android:singleLine="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pekerjaan Orang tua"
+        android:id="@+id/textViewPekerjaan" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/pekerjaan"
+        android:id="@+id/spinnerPekerjaan" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/buttonSubmit" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Diri :"
+                android:id="@+id/textViewHasil" />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
+    </ScrollView>
